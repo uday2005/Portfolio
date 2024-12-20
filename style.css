@@ -5,6 +5,9 @@
     box-sizing: border-box; /* Padding and Borders are included in the height and width */
 
 }
+html{
+    scroll-behavior: smooth;  /* For smooth scrolling overall page*/
+}
 
 body{
     font-family: sans-serif;
@@ -16,11 +19,11 @@ body{
     display:flex;
     list-style-type: none;
     font-size: 20px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: #ebcbae;
-    background-attachment: fixed; /*even if we scroll the bar background will not move */
-
+    
 }
+
 
 .list{
     padding:14px 10px;
@@ -43,7 +46,6 @@ body{
 .profile{
     /* width:600px; */
     height:400px;
-    
     width:50%;
     margin: 0px 20px 0px 0px;
     
@@ -68,7 +70,6 @@ body{
 .project-box1{
     font-size: 15px;
     line-height:24px;
-    
     border:4px slategray solid;
     width:33%;
     border-radius:4px;
@@ -110,19 +111,17 @@ body{
     overflow: hidden;
     border-radius: 4px;
     width:500px;
+    font-size: medium;
 }   
 
-#email{
-    margin-left: 3px;
-}
 
 #message{
-    
     border:4px solid black;
     overflow:scroll;
     border-radius: 4px;
     width:510px;
     height:100px;
+    font-size: medium;
 }
 
 .button{
@@ -131,21 +130,42 @@ body{
 #submit,
 #reset
 {
-    
     background-color:aqua;
     width:100px;
-}
-
-.nav1{
-    display:flex;
-    list-style-type: none;
-    font-size: 20px;
-    justify-content: flex-start;
-    background-color: #ebcbae;
-
+    height:40px;
 }
 
 .icon{
     width:40px;
     height:40px
+}
+li:hover
+{
+    background-color: yellow;
+    font-weight: bold;
+}
+#submit:hover,
+#reset:hover
+{
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+.name:focus,
+.email:focus,
+#message:focus{
+    background-color: rgb(181, 230, 222);
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width:740px) {
+    .content {
+      margin-left:0px;
+    }
+}
+
+#response_msg{
+    font-weight: bolder;
+    text-align:center;
 }

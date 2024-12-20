@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div>
+        <div class="nav-top">
         <ul class="nav">
             <li class="list"><a href="#home"> Home </a></li>
             <li class="list"><a href="#about"> About </a></li>
@@ -22,27 +22,29 @@
 
         <!-- <img src="you.jpg" class="myself"> -->
         <div class="hero">
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to My Portfolio</h1>
+        <h2>I  am trying to create amazing web experiences</h2>
         </div>
 
         <h1  id="about"> About Me </h1>
         <div class="about">
             <img class="profile" src="you.jpg">
             <div class="about1">
-            <h2>Hi, I am Uday</h2>
-            <p>Just Experimenting Everything and I  till know </p>
+            <h2 >Hi, I am Uday</h2>
+            <p >Just Experimenting Everything and till now i know</p>
             <p>HTMl , CSS , JavaScript , Python </p>
-            <p>Exploring Machine learning now Hope to Do competitive </p>
+            <p>Exploring Machine learning now, Hope to Do competitive </p>
             <p>Programming and Always thought of making video games </p>
-            <p>I play Badminton and I like to being sad </p>
+            <p>I play Badminton and Learning Squash</p>
             </div>
         </div>
 
         <div class="projects" id="projects">
             <h1 id="project"> Projects </h1>
             <div class="project-box1">
-                <img src="projectlogo.jpg" alt="Project Image" class="project-image">
                 <h2 class="project-title">Currency Converter</h2>
+                <img src="projectlogo.jpg" alt="Project Image" class="project-image">
+
                 <p class="project-description">Convert Currency Over 130 Countries in real time</p>
                 <div class="button1">
                 <button><a href="https://uday2005.github.io/Currency_Converter/" class="project-link">Website </a> </button>
@@ -54,7 +56,7 @@
         <div class="contact" id="contact">
             <h2 id="heading-contact">Send Message</h2>
             <div class="conatct-info">
-            <form action="mailto:24b2729@iitb.ac.in">
+            <form id="contact-form" action="mailto:24b2729@iitb.ac.in">
                 <p class="content">
                     <label for="name"> Name: </label> <br>
                     <input type="text" class="name" id="name" >
@@ -68,20 +70,22 @@
                     <textarea id="message" name="message"></textarea>
                 </p>
                 <p class="button">
-                    <input type="submit" id="submit" vlaue="Send"/>
+                    <input type="submit" id="submit" value="Send"/>
                     <input type="reset"id="reset" value="Reset" />  
                 <p>
             </form>
+
+                <p id="response_msg">  </p>
+
             </div>
         </div>
 
-        <div>
-            <ul class="nav1">
+        <div class="nav-down">
+            <ul class="nav">
                 <li class="list"><a href="https://github.com/uday2005"> <img src="github.png" alt="github" class="icon"> </a></li>
                 <li class="list"><a href="https://www.instagram.com/uuday__/"> <img src="instagram-logo.png" alt="instagram" class="icon"> </a></li>
-
             </ul>
         </div>
-
+    <script src="script.js"> </script>
     </body>
 </html>
